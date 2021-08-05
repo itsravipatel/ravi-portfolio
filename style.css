@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+}
+/* =====nav-bar===== */
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background-color: rgb(50, 53, 54) !important;
+}
+.navbar-brand{
+    font-family: 'Zen Tokyo Zoo',serif;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.navbar-brand:hover{
+    transform:scale(1.1,1.1);
+}
+.navbar-nav a{
+    font-family: "Ubuntu";
+    margin: 0 20px;
+    font-size: 20px;
+}
+.navbar-nav a:hover{
+    font-size: 21px;
+    font-weight: bold;
+    color: white !important;
+    transform: translateY(-1px);
+    /* transform:scale(1.05,1.05); */
+}
+.navbar-toggler{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/* ====== Home Page========= */
+#home {
+    background-image: url(../images/crow-blur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .my-img{
+    margin-top: 14px;
+    float: right;
+    
+}
+.my-img1{
+    border: 3px solid green;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 200px;
+    background-color: rgba(8, 8, 8,0.7);
+}
+.my-img1:hover{
+    background-color: rgba(8, 8, 8,0.85);
+}
+.container .name{
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-top: 20px;
+    background-color:rgb(8, 8, 8);
+    opacity: 0.7;
+    
+}
+.welcome{
+    /* font-family: 'Ubuntu'; */
+    font-weight:bold;
+    margin-top: 140px;
+    box-sizing: border-box;
+    font-size: 70px;
+    /* text-shadow: 0px 2px rgba(0, 255, 0,0.2); */
+} 
+.container .name:hover{
+    opacity: 0.85 !important;
+}
+.name h1{
+    font-size: 60px;
+    padding-top: 20px;
+    font-weight: bold; 
+}
+.name h2{
+    border-bottom: 3px solid green;
+    padding-bottom: 5px;
+    padding-top: 2%;
+    margin: 0;
+}
+.name {
+    border: 3px solid green;
+    border-radius: 20px;
+}
+.social-links{
+    padding-top: 50px;
+    padding-bottom: 0 !important;
+}
+.social-links a{
+    padding: 5px 13px;
+    margin: 5px 15px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    line-height: 1;
+    border-radius: 50%;
+    font-size: 20px;
+    transform: scale(1.1,1.1);
+    
+}
+.social-links a:hover{
+    background: green;
+
+}
+.image-wave{
+    width: 100% !important;
+    filter: brightness(0.1);
+    opacity: 0.8;
+}
+
+/* animate text */
+.name span::before{
+    content: '';
+    font-size: 40px;
+    font-family: 'Zen Tokyo Zoo',serif;
+    margin-top: auto;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animate infinite 15s 3s alternate;
+}
+@keyframes animate{
+    0%{
+        content: '@IIT KANPUR';
+    }
+    20%{
+        content: 'UG Y20 MECHANICAL';
+    }
+    40%{
+        content: 'WEB DEVELOPER';
+    }
+    60%{
+        content: 'SE Marketing,TechKriti';
+    }
+    80%{
+        content: 'CoCo, SPO';
+    }
+    100%{
+        content: 'Meme LOVER';
+    }
+}
+
+
+/* ======= About Me ========= */
+#about-me{
+    background-image: url(../images/pexels-abdullah-ghatasheh-1631677.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.borde{
+    border:2px solid black;
+}
+.heading{
+    font-size: 50px;
+    border-bottom: 3px solid green;   
+    color: black;
+    font-family: 'Zen Tokyo Zoo',serif;
+}
+.inverted{
+    transform: rotateX(180deg);
+    margin-top: -0.5px;
+}
+.my-img2{
+    border: 3px solid green;
+    border-radius: 50%;
+    background-color: rgba(8, 8, 8,0.7);
+    height: 350px !important;
+    width: 350px;
+    
+}
+.my-img2:hover{
+    background-color: rgba(8, 8, 8,0.8);
+}
+.text-bg{
+    color: rgb(255, 255, 255);
+    background-color: rgba(8, 8, 8, 0.7);
+    border: 3px solid green;
+    border-radius: 20px;
+}
+.text-bg:hover{
+    background-color: rgba(8, 8, 8, 0.8);
+}
+.fa-dot-circle{
+    color: green;
+}
+
+/* ========= WORK =========== */
+
+#work{
+    background-image: url(../images/sunset-horizon-blur-water-surface-reflection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#work .text-bg:hover{
+        transform: scale(1.1,1.1);
+}
+
+/* ========= CONTACT ======== */
+
+#contact{
+    background-image: url(../images/landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#contact .social-links{
+    padding-top: 0 !important;
+    margin: 8px 0!important;
+}
+#contact .text-bg{
+    border-radius: 10px;
+    transform: scale(0.97,0.97);
+}
+#contact .scale:hover{
+    transform: scale(1.01,1.01);
+}
+
+form label{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fa-envelope-open-text{
+    margin-top: 8%;
+    transform: scale(1.1,1.1);
+    color: whitesmoke;
+    border: 3px solid green;
+    border-radius: 50%;
+    padding: 40px 40px;
+    background: rgba(8, 8, 8, 0.5);
+}
+.fa-envelope-open-text:hover{
+    background: rgba(8, 8, 8,0.85);
+}
+#send{
+    outline: none !important;
+    box-shadow: none !important;
+    float:right;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
